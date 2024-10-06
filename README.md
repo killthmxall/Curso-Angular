@@ -7,6 +7,13 @@ Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-
 Lo primero antes de instalar Angular será instalar **Node.js** y **npm**
 
 1. Enlace de instalación Node.js:  https://nodejs.org/en
+2. Verificar que Node.js y npm se instalaron correctamente:
+   ```text
+   node -v
+   ```
+      ```text
+   npm -v
+   ```
 
 
 ## Creación de componentes
