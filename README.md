@@ -107,6 +107,8 @@ git remote add origin https://github.com/enlace-del-repositorio
 git push -u origin main
 ```
 
+### Cargar cambios realizados en el proyecto
+
 **Siempre realizar un "pull" como primer paso.**
 
 ```text
