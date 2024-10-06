@@ -33,8 +33,11 @@ Con Angular CLI una vez instalado, ejecuta el siguiente comando en la terminal:
    ```text
    ng new nombre-del-proyecto
    ```
-```text
+
 Te pedirá elegir las siguientes opciones:
+
+```text
+
 * ? Would you like to add Angular routing?
 * ? Which stylesheet format would you like to use?
   * > CSS
