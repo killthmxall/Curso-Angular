@@ -81,6 +81,32 @@ ng serve -o
 
 Pasos para la actualización del repositorio:
 
+### Cargar un proyecto nuevo a un repositorio
+
+```text
+git init
+```
+
+```text
+git add .
+```
+
+```text
+git commit -m "feat: Proyecto subido a github"
+```
+
+```text
+git branch -M main
+```
+
+```text
+git remote add origin https://github.com/enlace-del-repositorio
+```
+
+```text
+git push -u origin main
+```
+
 **Siempre realizar un "pull" como primer paso.**
 
 ```text
