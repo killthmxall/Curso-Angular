@@ -108,7 +108,7 @@ git branch -M main
 ```
 
 ```text
-Opcional: git remote add origin https://github.com/RDCodevs/crm_ms.git
+**Opcional:** git remote add origin https://github.com/killthmxall/Curso-Angular.git
 ```
 
 ```text
