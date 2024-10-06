@@ -4,6 +4,8 @@ Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-
 
 ## Instalación de Angular
 
+Es recomendable hacer uso de la **Terminal de Windows** y **Powershell**, ambos disponibles desde la Store de Microsoft 
+
 Lo primero antes de instalar Angular será instalar **Node.js** y **npm**
 
 1. Enlace de instalación de Node.js:  https://nodejs.org/en
@@ -21,7 +23,10 @@ Después de haber instalado Node.js y npm será necesario instalar **Angular CLI
    ```text
    npm install -g @angular/cli
    ```
-   
+2. Verifica que Angular CLI se haya instalado correctamente:
+   ```text
+   ng version
+   ```
 
 
 ## Creación de componentes
