@@ -33,12 +33,6 @@ Con Angular CLI una vez instalado, ejecuta el siguiente comando en la terminal:
    ```text
    ng new nombre-del-proyecto
    ```
-## Navegar al directorio del proyecto
-Después de crear el proyecto, navega al directorio del proyecto con el siguiente comando:
-
-   ```text
-   cd nombre-del-proyecto
-   ```
 
 Te pedirá elegir las siguientes opciones:
 
@@ -52,6 +46,13 @@ Te pedirá elegir las siguientes opciones:
   * Less   [ http://lesscss.org     
 ```
 Dependerá de ti otorgarle enrutamiento a tu proyecto y escoger entre los diferentes estilos.
+
+## Navegar al directorio del proyecto
+Después de crear el proyecto, navega al directorio del proyecto con el siguiente comando:
+
+   ```text
+   cd nombre-del-proyecto
+   ```
 
 ## Creación de componentes
 
