@@ -27,7 +27,12 @@ Después de haber instalado Node.js y npm será necesario instalar **Angular CLI
    ```text
    ng version
    ```
-
+   
+## Creación de un nuevo proyecto
+Con Angular CLI una vez instalado, ejecuta el siguiente comando en la terminal:
+   ```text
+   ng new nombre-del-proyecto
+   ```
 
 ## Creación de componentes
 
