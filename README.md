@@ -8,12 +8,17 @@ Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-
 
 ## Creación de componentes
 
-Ejecuta el siguiente comando para generar un nuevo componente. También se puede usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Ejecuta el siguiente comando para generar un nuevo componente.
 
 ```text
 ng generate component nombre-del-componente
 ```
 
+También se puede usar:
+
+```text 
+ng generate directive|pipe|service|class|guard|interface|enum|module`
+```
 
 
 ## Ejecutar el Servidor de desarrollo
