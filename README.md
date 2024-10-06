@@ -77,7 +77,43 @@ Ejecuta el siguiente comando para iniciar un servidor de desarrollo. La aplicaci
 ng serve -o
 ```
 
-## Compilación
+## GitHub
 
-Ejecuta `ng build` para compilar el proyecto. Los artefactos de la compilación se almacenarán en el directorio `dist/`.
+---
+
+Pasos para la actualización del repositorio:
+
+**Siempre realizar un "pull" como primer paso.**
+
+```text
+git pull origin main
+```
+
+```text
+git init
+```
+
+```text
+git status
+```
+
+```text
+git add .
+```
+
+```text
+git commit -m "Describir el cambio que se hace"
+```
+
+```text
+git branch -M main
+```
+
+```text
+Opcional: git remote add origin https://github.com/RDCodevs/crm_ms.git
+```
+
+```text
+git push -u origin main --force
+```
 
