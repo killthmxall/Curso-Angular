@@ -115,3 +115,11 @@ git branch -M main
 git push -u origin main --force
 ```
 
+### Clonar repositorio
+```text
+>>cd D:/
+```
+
+```text
+git clone https://github.com/killthmxall/Curso-Angular.git
+```
