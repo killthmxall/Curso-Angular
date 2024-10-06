@@ -79,8 +79,6 @@ ng serve -o
 
 ## GitHub
 
----
-
 Pasos para la actualización del repositorio:
 
 **Siempre realizar un "pull" como primer paso.**
