@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-body">
+        <form (ngSubmit)="enviar_formulario()">
+
+            <div>
+                <label class="form-label">
+                    Nombre:
+                </label>
+
+                <input type="text" name="nombre" class="form-control" placeholder="Ingrese un nombre" [(ngModel)]="persona.nombre">
+            </div>
+
+            <div>
+                <label class="form-label">
+                    Edad:
+                </label>
+
+                <input type="text" name="edad" class="form-control" placeholder="Ingrese su edad" [(ngModel)]="persona.edad">
+            </div>
+
+            <button class="btn btn-primary mt-2">
+                Enviar
+            </button>
+
+        </form>
+    </div>
+</div>
+
+{{ persona | json }} <!-- Con la pipe "|" se especifica el formato en el cual se quiere mostrar el dato.-->

@@ -1,0 +1,64 @@
+<div class="main-width">
+    <h2 style="font-weight: bolder;"> 6. Variables de Plantilla</h2>
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <br>
+    <h5>Las variables de plantilla son identificadores locales que se definen en el archivo HTML. Son mayormente usados en formularios. </h5>
+    <br>
+    <br>
+    <h5>Es una forma de interactuar con los elementos y sus propiedades en ser declaradas en la clase principal del componente.</h5>
+    <br>
+    <br>
+    
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <h4 style="font-weight: bolder;">Sintáxis de las Variables de Plantilla</h4>
+    <br>
+    <br>
+    <h5>Se define dentro de la etiqueta HTML usando el símbolo de numeral </h5> <h5 style="color: rgb(255, 123, 0);"> "#" </h5> <h5>, seguido del nombre que se le vaya a dar a la variable de plantilla.</h5>
+    <br>
+        <figure class="figura">
+            <img class="img1" src="./assets/Picture18.png" alt="">
+        </figure>
+    <br>
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <h4 style="font-weight: bolder;">Ejemplo</h4>
+    <br>
+    <br>
+    <h5>En este ejemplo se ha creado un elemento </h5> <h5 style="color: #ae00ff;">input</h5> <h5>, y dentro de sus propiedades se ha agregado la variable de plantilla </h5> <h5 style="color: #ff0055;">#name</h5>
+    <br>
+        <figure class="figura">
+            <img class="img1" src="./assets/Picture17.png" alt="">
+        </figure>
+    <br>
+    <h5>Se define además un elemento button, el cual mediante un evento </h5> <h5 style="color: #11cabe;">(click)</h5> <h5>, llama al método: </h5> <h5 style="color: #3333ff;">mostrar_en_consola(name.value)</h5>
+    <br>
+    <h5 style="color: #ff8800;">#name.value </h5> <h5> es el valor del campo de texto (input) asociado a la variable de plantilla </h5> <h5 style="color: #ff0055;">#name</h5>
+    <br>
+        <figure class="figura">
+            <img class="img1" src="./assets/Picture19.png" alt="">
+        </figure>
+    <br>
+    <h5>El método </h5> <h5 style="color: #ff4443;" > mostrar_en_consola() </h5> <h5>se define en la clase principal del componente, en donde se imprime en consola el valor de la variable </h5> <h5 style="color: #3333ff;"> name.</h5>
+    <br>
+        <figure class="figura">
+            <img class="img3" src="./assets/Picture23.png" alt="">
+        </figure>
+    <br>
+    
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <h4 style="font-weight: bolder;">Demostración</h4>
+    <br>
+
+    <div class="container">
+        <!-- Se crea un elemento input para ingresar el nombre de una persona-->
+        <input type="text" placeholder="Escribe tu nombre" class="form-control" #name> <!-- Se le añade la variable de plantilla #name-->
+
+        <button class="btn btn-primary mt-2" (click)="mostrar_en_consola(name.value)">
+            Mostrar en Consola
+        </button>
+        <br>
+        <h5> Esto se mostró en consola: </h5> <h5 style="color: #ff4443;"> {{ name.value }} </h5>
+    </div>
+
+
+
+</div>

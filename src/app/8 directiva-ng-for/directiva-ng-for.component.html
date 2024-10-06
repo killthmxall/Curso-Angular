@@ -1,0 +1,72 @@
+<div class="main-width">
+    <h2 style="font-weight: bolder;"> 8. Directiva ngFor</h2>
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <br>
+    <h5>La directiva ngFor se trata de una forma de iterar sobre una lista de elementos, es un bucle que repite el contenido de un array.</h5>
+    <br>
+    <br>
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <h4 style="font-weight: bolder;">Sintáxis de la Directiva ngFor</h4>
+    <br>
+    <br>
+    <h5>Se declara dentro de un elemento </h5> <h5 style="color: rgb(255, 0, 200);" > li </h5> <h5> usando un asterisco para comenzar con la directiva: </h5> <h5 style="color: rgb(0, 140, 255);"> "*ngFor" </h5>
+    <br>
+    <h5>seguido de las sentencias let ... of </h5> <h5 style="color: rgb(255, 123, 0);"> "*ngfor= "let i of items" </h5>
+    <br>
+        <figure class="figura">
+            <img class="img2" src="./assets/Picture27.png" alt="">
+        </figure>
+    <br>
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <h4 style="font-weight: bolder;">Ejemplo</h4>
+    <br>
+    <br>
+    <h5>Es necesario crear una interfaz para establecer la estructura o el tipo de elementos que se guardarán en el arreglo de elementos.</h5>
+    <br>
+        <figure class="figura">
+            <img class="img2" src="./assets/Picture28.png" alt="">
+        </figure>
+    <br>
+    <h5>En el componente TypeScript (ts) se deberá importar la interfaz anteriormente creada, para después llenarla de elementos que sigan la estructura establecida.</h5>
+    <br>
+    <br>
+    <h5>Se establece un arreglo de elementos o array denominado "personas", que parte de la interfaz Persona[]. </h5>
+    <br>
+    <br>
+    <h5>Se definen varias personas que cumplan con la estructura de la interfaz persona. </h5>
+    <br>
+        <figure class="figura">
+            <img class="img3" src="./assets/Picture29.png" alt="">
+        </figure>
+    <br>
+    <h5>Para acceder a los elementos del array creado en el archivo .ts, se debe almacenar los elementos en un bucle.</h5>
+    <br>
+    <br>
+    <h5>Para esto, se creará un listado </h5> <h5 style="color: rgb(255, 0, 200);" > li </h5> <h5> dentro del cual se establecerá la directiva </h5> <h5 style="color: rgb(0, 17, 255);" > *ngFor. </h5>
+    <br>
+    <br>
+    <h5>La directiva *ngFor debe ir acompañada de las sentencias </h5> <h5 style="color: rgb(55, 173, 0);" > let </h5> <h5> y </h5> <h5 style="color: rgb(0, 162, 255);" > of. </h5>
+    <br>
+    <br>
+    <h5>Se utiliza la directiva *ngFor para iterar sobre un arreglo llamado <h5 style="color: rgb(255, 0, 0);" > personas </h5> y crear una lista ul donde cada elemento li muestra el índice y las propiedades <h5 style="color: rgb(44, 189, 0);" > nombre </h5> y <h5 style="color: rgb(0, 180, 111);" > edad </h5> de cada objeto dentro del array.</h5>
+    <br>
+        <figure class="figura">
+            <img class="img2" src="./assets/Picture30.png" alt="">
+        </figure>
+    <br>
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <h4 style="font-weight: bolder;">Demostración</h4>
+    <br>
+
+    <!-- Para acceder a los elementos del array creado en el archivo .ts, se debe almacenar los elementos en un bucle -->
+    <div class="container">
+        <ul>
+            <li *ngFor="let indice of personas; let i = index">
+                {{ i + 1 }} - {{ indice.nombre }} ({{ indice.edad }})
+            </li>
+        </ul>
+    </div>
+</div>

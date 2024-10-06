@@ -1,0 +1,40 @@
+<div class="main-width">
+    <h2 style="font-weight: bolder;">3. Métodos</h2>
+
+    <!--------------------------------->
+    <!-- Ejemplo Boton de incremento -->
+    <!--------------------------------->
+    <br>
+    <h5>En angular, los métodos son funciones definidas dentro de una clase. </h5>
+    <h5>La sintaxis es la siguiente:</h5><h5 style="color: rgb(0, 110, 255);" > nombreMetodo(). </h5>
+    <br>
+    <br>
+    <h5>Los métodos decrementar() e incrementar() se declaran dentro de la clase</h5> <h5 style="color: rgb(255, 0, 221);"> MetodosComponent </h5> <h5> de el archivo </h5> <h5 style="color: rgb(69, 153, 0);">metodos.component.ts </h5>
+
+        <figure class=figura>
+            <img class="img1" src="./assets/Picture2.png" alt="">
+        </figure>
+
+    <h5> En este ejemplo se hace uso de los métodos incrementar() y decrementar(), y se los llama a través del evento (click) de los elementos button</h5>
+    
+        <figure class="figura">
+            <img class="img2" src="./assets/Picture1.png" alt="">
+        </figure>
+
+    <h4 style="font-weight: bolder;"> Ejemplo Práctico </h4>
+    <div class="container">
+        <div class="metodos">
+            <button class="btn btn-danger" (click) = "decrementar()"> 
+                REDUCIR ->
+            </button>
+            
+            <div class="recuadro">
+                <span > {{ numero }} </span> <!--Interpolación-->
+            </div>
+
+            <button class="btn btn-success" (click) = "incrementar()">
+                <- AUMENTAR 
+            </button>
+        </div>
+    </div>
+</div>

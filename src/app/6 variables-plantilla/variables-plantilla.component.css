@@ -1,0 +1,65 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+h4{
+    display: inline;
+}
+
+h5{
+    display: inline;
+}
+
+span{
+    position: relative;
+    left: 40%;
+    transform: translate(50%, -50%);
+}
+
+button{
+    width: 150px;
+}
+
+input{
+    width: 250px;
+}
+
+.main-width{
+    width: 1700px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.img1{
+    height: 180px;
+}
+
+.img2{
+    height: 200px;
+}
+
+.img3{
+    height: 280px;
+}
+
+.container{
+    position: relative;
+    padding: 1%;
+}
+
+.propertyBinding{
+    height: 500px;
+}
+
+.figura{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+

@@ -1,0 +1,80 @@
+
+<div class="main-width">
+    <h2 style="font-weight: bolder;"> 5. Property Binding</h2>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <br>
+    <h5>Property Binding se trata de una forma de enlazar las propiedades del component TypeScript con las propiedades de los elementos HTML. </h5>
+    <br>
+    <br>
+    <h5>Es una forma unidireccional de enviar datos desde la lógica del componente hacia la vista.</h5>
+    <br>
+    <br>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <h4 style="font-weight: bolder;">Sintáxis de Property Binding</h4>
+    <br>
+    <br>
+    <h5>En el archivo TypeScript se define una propiedad, es decir, se crea una variable y se define el tipo de dato. </h5>
+    <br>
+    <br>
+    <h5>En este caso, la variable se nombra: </h5> <h5 style="color: rgb(224, 69, 255);"> imagen </h5> <h5> y su tipo de dato es: </h5> <h5 style="color: rgb(96, 112, 255);"> string. </h5>
+    <br>
+    <br>
+    <h5>Además, se le otorga el enlace para obtener una imagen de stock.</h5>
+    <br>
+    <br>
+        <figure class=figura>
+            <img class="img1" src="./assets/Picture14.png" alt="">
+        </figure>
+    <br>
+    <br>
+    <h5>En el archivo HTML , para llamar a la clase se usa la sintaxis </h5> <h5 style="color: rgb(255, 0, 221);"> [elementoPropiedad] = "componentePropiedad"</h5> 
+    <h5>con la propiedad HTML entre corchetes "[]", donde [elementoPropiedad] es el nombre de la propiedad HTML de dicho elemento, puede ser </h5> <h5 style="color: rgb(255, 96, 96);"> src, </h5> <h5 style="color: rgb(255, 96, 96);"> disabled, </h5> <h5 style="color: rgb(255, 96, 96);"> value, </h5> <h5> etc. </h5>
+    <br>
+    <br>
+    <h5> Mientras, "componentePropiedad" es la expresión o variable creada en el componente TypeScript. </h5>
+    <br>
+    <br>
+        <figure class=figura>
+            <img class="img2" src="./assets/Picture15.png" alt="">
+        </figure>
+    <br>
+    <br>
+    <h5>En el ejemplo, la propiedad que se encierra dentro de los corchetes es: </h5> <h5 style="color: blue;"> [src] </h5>
+    <h5>, y se llama a la variable </h5> <h5 style="color: blueviolet;"> "imagen" </h5> <h5> creada en la clase del componente.</h5>
+    <br>
+    <br>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <h4 style="font-weight: bolder;">Demostración</h4>
+    <br>
+    <br>
+
+    <!--Se añade la etiqueta img para hacer uso de la clase creada-->
+    <img class="propertyBinding" [src]="imagen" alt="">
+    
+    <br>
+    <br>
+    <h4 style="font-weight: bolder;">Ejemplo 2</h4>
+    <br>
+    <br>
+    <h5>Se añaden botones para simular un carrusel de imagenes.</h5>
+    <br>
+    <br>
+    <h5>En cada boton se agrega el evento </h5> <h5 style="color: blueviolet;">(click)</h5> <h5>, al cual se le entrega la variable </h5> <h5 style="color: #ff4800;">"imagen"</h5> <h5> con la dirección de una nueva imagen. </h5>
+    <br>
+    <br>
+        <figure class=figura>
+            <img class="img3" src="./assets/Picture16.png" alt="">
+        </figure>
+    <br>
+    <h4 style="font-weight: bolder;">Demostración</h4>
+    <div class="container">
+        <button class="boton, btn btn-success" (click)="imagen = 'https://images.pexels.com/photos/20703724/pexels-photo-20703724/free-photo-of-animal-mascota-mono-pelo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <button class="boton, btn btn-danger" (click)="imagen = 'https://images.pexels.com/photos/28173305/pexels-photo-28173305/free-photo-of-ciudad-resplandeciente-al-atardecer-enmarcada-por-edificios.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'">
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+</div>

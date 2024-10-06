@@ -1,0 +1,94 @@
+<div class="main-width">
+    <h2 style="font-weight: bolder;"> 7. Directiva ngIf; else</h2>
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <br>
+    <h5>La directiva ngIf y else es utilizada para mostrar u ocultar un elemento, siendo necesaria una condición booleana antes de su declaración.</h5>
+    <br>
+    <br>
+    <h5>ngIf junto con else permite renderizar un bloque alternativo si la condición no se cumple.</h5>
+    <br>
+    <br>
+    <h5>ngIf al tener la condición "false", no oculta el elemento, si no que lo elimina directamente del DOM.</h5>
+    <br>
+    <br>
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <h4 style="font-weight: bolder;">Sintáxis de la Directiva ngIf</h4>
+    <br>
+    <br>
+    <h5>Se declara usando un asterisco antes de la directiva: </h5> <h5 style="color: rgb(255, 123, 0);"> "*ngIf" </h5>
+    <br>
+    <h5>else se declara seguido de la directiva ngIf: </h5> <h5 style="color: rgb(255, 123, 0);"> "*ngIf; else" </h5>
+    <br>
+        <figure class="figura">
+            <img class="img1" src="./assets/Picture22.png" alt="">
+        </figure>
+    <br>
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <h4 style="font-weight: bolder;">Ejemplo</h4>
+    <br>
+    <br>
+    <h5>En la clase principal del componente se modifica el método </h5> <h5 style="color: #ff4443;" > mostrar_en_consola() </h5> <h5> añadiendo los siguientes parámetros: </h5> 
+    <br>
+    <h5 style="color: blueviolet;"> openAlert:boolean = false; </h5>
+    <br>
+    <h5 style="color: rgb(0, 158, 105);"> this.openAlert = true; </h5>
+    <br>
+        <figure class="figura">
+            <img class="img3" src="./assets/Picture24.png" alt="">
+        </figure>
+    <br>
+    <h5>Al presionar el botón "Mostrar en Consola", el estado de la variable booleana </h5> <h5 style="color: #0044ff;"> openAlert </h5> <h5> cambia de </h5> <h5 style="color: rgb(255, 0, 0);"> false </h5> <h5> a </h5> <h5 style="color: green;"> true, </h5>
+    <br>
+    <h5>mostrando el elemento alert que contiene la directiva *ngIf=openAlert </h5>
+    <br>
+        <figure class="figura">
+            <img class="img2" src="./assets/Picture25.png" alt="">
+        </figure>
+    <br>
+    <h5>Se añade un nuevo botón "x" con el cual ocultar la alerta que se mostró.</h5>
+    <br>
+    <h5>Dentro de este elemento button, se establece un evento </h5> <h5 style="color: #0054f0;"> (click) </h5> <h5> para cambiar el valor </h5> <h5 style="color: #39b400;"> true </h5>  <h5> de </h5> <h5 style="color: #ff43e6;"> openAlert </h5> a <h5 style="color: #ff0000;"> false. </h5>
+    <br>
+        <figure class="figura">
+            <img class="img3" src="./assets/Picture26.png" alt="">
+        </figure>
+    <br>
+
+    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <h4 style="font-weight: bolder;">Demostración</h4>
+    <br>
+    <div class="container">
+        <!-- Se crea un elemento input para ingresar el nombre de una persona-->
+        <input type="text" placeholder="Escribe tu nombre" class="form-control" #name> <!-- Se le añade la variable de plantilla de no-->
+
+        <button class="btn btn-primary mt-2" (click)="mostrar_en_consola(name.value)">
+            Mostrar en Consola
+        </button>
+
+        <!-- Se crea una alerta que deberá ocultarse y mostrarse bajo una condición-->
+        <div class="alert alert-primary mt-4" *ngIf="openAlert; else mensaje"> <!-- Se crea la directiva ngIf para ocultar la alerta-->
+            <p>Se ha enviado el mensaje</p>
+            <button class="btnx btn btn-danger" (click)="openAlert = false; isLoggedIn = true"> <!-- Cambia el valor de openAlert por false, para cerrar la alerta-->
+                x
+            </button>
+        </div>
+
+        <ng-template #mensaje>
+            <div class="alert alert-danger mt-2">
+            Mensaje de Prueba
+            </div>
+        </ng-template>
+
+
+        <div *ngIf="isLoggedIn; else loggedOutTemplate">
+            <p>Bienvenido, estás logueado</p>
+        </div>
+
+        <ng-template #loggedOutTemplate>
+            <p>No has iniciado sesión. Por favor, loguéate.</p>
+        </ng-template>
+    </div>
+
+</div>
