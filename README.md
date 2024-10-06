@@ -4,6 +4,9 @@ Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-
 
 ## Instalación de Angular
 
+Lo primero antes de instalar Angular será instalar **Node.js** y **npm**
+
+Ve a la página oficial de **Node.js** y descárgalo en su versión más reciente:  https://nodejs.org/en
 
 
 ## Creación de componentes
@@ -17,7 +20,7 @@ ng generate component nombre-del-componente
 También se puede usar:
 
 ```text 
-ng generate directive|pipe|service|class|guard|interface|enum|module`
+ng generate directive|pipe|service|class|guard|interface|enum|module
 ```
 
 
