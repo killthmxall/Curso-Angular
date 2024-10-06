@@ -33,7 +33,7 @@ Con Angular CLI una vez instalado, ejecuta el siguiente comando en la terminal:
    ```text
    ng new nombre-del-proyecto
    ```
-
+```text
 Te pedirá elegir las siguientes opciones:
 * ? Would you like to add Angular routing?
 * ? Which stylesheet format would you like to use?
@@ -41,7 +41,7 @@ Te pedirá elegir las siguientes opciones:
   * SCSS   [ https://sass-lang.com/documentation/syntax#scss                ]
   * Sass   [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
   * Less   [ http://lesscss.org     
-
+```
 Dependerá de ti otorgarle enrutamiento a tu proyecto y escoger entre los diferentes estilos.
 
 ## Creación de componentes
