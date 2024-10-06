@@ -107,10 +107,8 @@ git commit -m "Describir el cambio que se hace"
 git branch -M main
 ```
 
-**Opcional:**
-
 ```text
-git remote add origin https://github.com/killthmxall/Curso-Angular.git
+**Opcional:** git remote add origin https://github.com/killthmxall/Curso-Angular.git
 ```
 
 ```text
