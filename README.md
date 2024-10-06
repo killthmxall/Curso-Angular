@@ -34,6 +34,14 @@ Con Angular CLI una vez instalado, ejecuta el siguiente comando en la terminal:
    ng new nombre-del-proyecto
    ```
 
+Te pedirá elegir las siguientes opciones
+* ? Would you like to add Angular routing?
+* ? Which stylesheet format would you like to use?
+  * > CSS
+    SCSS   [ https://sass-lang.com/documentation/syntax#scss                ]
+    Sass   [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+    Less   [ http://lesscss.org     
+
 ## Creación de componentes
 
 Ejecuta el siguiente comando para generar un nuevo componente.
